@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import AppBar from '@material-ui/core/AppBar';
 
 import MigrationTool from '../components/MigrationTool'
+import MigrationReport from '../components/MigrationReport'
 
 import logo from '../assets/img/logo.png';
 import bg from '../assets/img/background-upload2.jpeg';
@@ -42,6 +43,7 @@ class LoaderPage extends Component {
         </AppBar>
         <Grid container justify = "space-evenly">
           <MigrationTool />
+          <MigrationReport/>
         </Grid>
       </div>
     );
