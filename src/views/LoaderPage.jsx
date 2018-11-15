@@ -5,6 +5,8 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import AppBar from '@material-ui/core/AppBar';
 
+import MigrationTool from '../components/MigrationTool'
+
 import logo from '../assets/img/logo.png';
 import bg from '../assets/img/background-upload2.jpeg';
 import loaderPageStyle from '../assets/jss/loaderPageStyle.jsx'
@@ -38,6 +40,9 @@ class LoaderPage extends Component {
         >
           <img className={classes.logo} src={logo} alt="Kustomer Logo" />
         </AppBar>
+        <Grid container justify = "space-evenly">
+          <MigrationTool />
+        </Grid>
       </div>
     );
   }
